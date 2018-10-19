@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E65C82E21793C0A00D07999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65C82D21793C0A00D07999 /* AppDelegate.swift */; };
+		1E65C83021793C0B00D07999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E65C82F21793C0B00D07999 /* Assets.xcassets */; };
+		1E65C83321793C0B00D07999 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E65C83121793C0B00D07999 /* MainMenu.xib */; };
+		1E65C84221793C3200D07999 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E65C84121793C3200D07999 /* Cocoa.framework */; };
+		1E65C84521793C3200D07999 /* blockerListBlock.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E65C84421793C3200D07999 /* blockerListBlock.json */; };
+		1E65C84721793C3200D07999 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65C84621793C3200D07999 /* ContentBlockerRequestHandler.swift */; };
+		1E65C84C21793C3200D07999 /* NoGoofingOffBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E65C83F21793C3200D07999 /* NoGoofingOffBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1EA4B4BA21799A46009999B4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E65C84121793C3200D07999 /* Cocoa.framework */; };
+		1EA4B4BD21799A46009999B4 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA4B4BC21799A46009999B4 /* SafariExtensionHandler.swift */; };
+		1EA4B4C521799A46009999B4 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 1EA4B4C421799A46009999B4 /* script.js */; };
+		1EA4B4CB21799A46009999B4 /* NoGoofingOffTimerSafariExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1EA4B4B921799A46009999B4 /* NoGoofingOffTimerSafariExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1EF8A57F2179A58E0030C209 /* blockerListAllow.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF8A57E2179A1F10030C209 /* blockerListAllow.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E65C84A21793C3200D07999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E65C82221793C0A00D07999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E65C83E21793C3200D07999;
+			remoteInfo = NoGoofingOffBlocker;
+		};
+		1EA4B4C921799A46009999B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E65C82221793C0A00D07999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EA4B4B821799A46009999B4;
+			remoteInfo = NoGoofingOffTimerSafariExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E65C85021793C3200D07999 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1EA4B4CB21799A46009999B4 /* NoGoofingOffTimerSafariExt.appex in Embed App Extensions */,
+				1E65C84C21793C3200D07999 /* NoGoofingOffBlocker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E65C82A21793C0A00D07999 /* NoGoofingOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoGoofingOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E65C82D21793C0A00D07999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E65C82F21793C0B00D07999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E65C83221793C0B00D07999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1E65C83421793C0B00D07999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E65C83521793C0B00D07999 /* NoGoofingOff.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoGoofingOff.entitlements; sourceTree = "<group>"; };
+		1E65C83F21793C3200D07999 /* NoGoofingOffBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NoGoofingOffBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E65C84121793C3200D07999 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1E65C84421793C3200D07999 /* blockerListBlock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerListBlock.json; sourceTree = "<group>"; };
+		1E65C84621793C3200D07999 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		1E65C84821793C3200D07999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E65C84921793C3200D07999 /* NoGoofingOffBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoGoofingOffBlocker.entitlements; sourceTree = "<group>"; };
+		1EA4B4B921799A46009999B4 /* NoGoofingOffTimerSafariExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NoGoofingOffTimerSafariExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA4B4BC21799A46009999B4 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		1EA4B4C321799A46009999B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EA4B4C421799A46009999B4 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		1EA4B4C821799A46009999B4 /* NoGoofingOffTimerSafariExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoGoofingOffTimerSafariExt.entitlements; sourceTree = "<group>"; };
+		1EF8A57E2179A1F10030C209 /* blockerListAllow.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerListAllow.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E65C82721793C0A00D07999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E65C83C21793C3200D07999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E65C84221793C3200D07999 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA4B4B621799A46009999B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA4B4BA21799A46009999B4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E65C82121793C0A00D07999 = {
+			isa = PBXGroup;
+			children = (
+				1E65C82C21793C0A00D07999 /* NoGoofingOff */,
+				1E65C84321793C3200D07999 /* NoGoofingOffBlocker */,
+				1EA4B4BB21799A46009999B4 /* NoGoofingOffTimerSafariExt */,
+				1E65C84021793C3200D07999 /* Frameworks */,
+				1E65C82B21793C0A00D07999 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E65C82B21793C0A00D07999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E65C82A21793C0A00D07999 /* NoGoofingOff.app */,
+				1E65C83F21793C3200D07999 /* NoGoofingOffBlocker.appex */,
+				1EA4B4B921799A46009999B4 /* NoGoofingOffTimerSafariExt.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E65C82C21793C0A00D07999 /* NoGoofingOff */ = {
+			isa = PBXGroup;
+			children = (
+				1E65C82D21793C0A00D07999 /* AppDelegate.swift */,
+				1E65C82F21793C0B00D07999 /* Assets.xcassets */,
+				1E65C83121793C0B00D07999 /* MainMenu.xib */,
+				1E65C83421793C0B00D07999 /* Info.plist */,
+				1E65C83521793C0B00D07999 /* NoGoofingOff.entitlements */,
+			);
+			path = NoGoofingOff;
+			sourceTree = "<group>";
+		};
+		1E65C84021793C3200D07999 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E65C84121793C3200D07999 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E65C84321793C3200D07999 /* NoGoofingOffBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				1E65C84421793C3200D07999 /* blockerListBlock.json */,
+				1EF8A57E2179A1F10030C209 /* blockerListAllow.json */,
+				1E65C84621793C3200D07999 /* ContentBlockerRequestHandler.swift */,
+				1E65C84821793C3200D07999 /* Info.plist */,
+				1E65C84921793C3200D07999 /* NoGoofingOffBlocker.entitlements */,
+			);
+			path = NoGoofingOffBlocker;
+			sourceTree = "<group>";
+		};
+		1EA4B4BB21799A46009999B4 /* NoGoofingOffTimerSafariExt */ = {
+			isa = PBXGroup;
+			children = (
+				1EA4B4BC21799A46009999B4 /* SafariExtensionHandler.swift */,
+				1EA4B4C321799A46009999B4 /* Info.plist */,
+				1EA4B4C421799A46009999B4 /* script.js */,
+				1EA4B4C821799A46009999B4 /* NoGoofingOffTimerSafariExt.entitlements */,
+			);
+			path = NoGoofingOffTimerSafariExt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E65C82921793C0A00D07999 /* NoGoofingOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E65C83821793C0B00D07999 /* Build configuration list for PBXNativeTarget "NoGoofingOff" */;
+			buildPhases = (
+				1E65C82621793C0A00D07999 /* Sources */,
+				1E65C82721793C0A00D07999 /* Frameworks */,
+				1E65C82821793C0A00D07999 /* Resources */,
+				1E65C85021793C3200D07999 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E65C84B21793C3200D07999 /* PBXTargetDependency */,
+				1EA4B4CA21799A46009999B4 /* PBXTargetDependency */,
+			);
+			name = NoGoofingOff;
+			productName = NoGoofingOff;
+			productReference = 1E65C82A21793C0A00D07999 /* NoGoofingOff.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E65C83E21793C3200D07999 /* NoGoofingOffBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E65C84D21793C3200D07999 /* Build configuration list for PBXNativeTarget "NoGoofingOffBlocker" */;
+			buildPhases = (
+				1E65C83B21793C3200D07999 /* Sources */,
+				1E65C83C21793C3200D07999 /* Frameworks */,
+				1E65C83D21793C3200D07999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoGoofingOffBlocker;
+			productName = NoGoofingOffBlocker;
+			productReference = 1E65C83F21793C3200D07999 /* NoGoofingOffBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1EA4B4B821799A46009999B4 /* NoGoofingOffTimerSafariExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EA4B4CE21799A46009999B4 /* Build configuration list for PBXNativeTarget "NoGoofingOffTimerSafariExt" */;
+			buildPhases = (
+				1EA4B4B521799A46009999B4 /* Sources */,
+				1EA4B4B621799A46009999B4 /* Frameworks */,
+				1EA4B4B721799A46009999B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoGoofingOffTimerSafariExt;
+			productName = NoGoofingOffTimerSafariExt;
+			productReference = 1EA4B4B921799A46009999B4 /* NoGoofingOffTimerSafariExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E65C82221793C0A00D07999 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "John Thywissen";
+				TargetAttributes = {
+					1E65C82921793C0A00D07999 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					1E65C83E21793C3200D07999 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					1EA4B4B821799A46009999B4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 1E65C82521793C0A00D07999 /* Build configuration list for PBXProject "NoGoofingOff" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E65C82121793C0A00D07999;
+			productRefGroup = 1E65C82B21793C0A00D07999 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E65C82921793C0A00D07999 /* NoGoofingOff */,
+				1E65C83E21793C3200D07999 /* NoGoofingOffBlocker */,
+				1EA4B4B821799A46009999B4 /* NoGoofingOffTimerSafariExt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E65C82821793C0A00D07999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E65C83021793C0B00D07999 /* Assets.xcassets in Resources */,
+				1E65C83321793C0B00D07999 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E65C83D21793C3200D07999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF8A57F2179A58E0030C209 /* blockerListAllow.json in Resources */,
+				1E65C84521793C3200D07999 /* blockerListBlock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA4B4B721799A46009999B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA4B4C521799A46009999B4 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E65C82621793C0A00D07999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E65C82E21793C0A00D07999 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E65C83B21793C3200D07999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E65C84721793C3200D07999 /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA4B4B521799A46009999B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA4B4BD21799A46009999B4 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E65C84B21793C3200D07999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E65C83E21793C3200D07999 /* NoGoofingOffBlocker */;
+			targetProxy = 1E65C84A21793C3200D07999 /* PBXContainerItemProxy */;
+		};
+		1EA4B4CA21799A46009999B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EA4B4B821799A46009999B4 /* NoGoofingOffTimerSafariExt */;
+			targetProxy = 1EA4B4C921799A46009999B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E65C83121793C0B00D07999 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E65C83221793C0B00D07999 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E65C83621793C0B00D07999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E65C83721793C0B00D07999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1E65C83921793C0B00D07999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NoGoofingOff/NoGoofingOff.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 755KUH5ENK;
+				INFOPLIST_FILE = NoGoofingOff/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.thywissen.john.NoGoofingOff;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		1E65C83A21793C0B00D07999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NoGoofingOff/NoGoofingOff.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 755KUH5ENK;
+				INFOPLIST_FILE = NoGoofingOff/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.thywissen.john.NoGoofingOff;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		1E65C84E21793C3200D07999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NoGoofingOffBlocker/NoGoofingOffBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 755KUH5ENK;
+				INFOPLIST_FILE = NoGoofingOffBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.thywissen.john.NoGoofingOff.NoGoofingOffBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		1E65C84F21793C3200D07999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NoGoofingOffBlocker/NoGoofingOffBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 755KUH5ENK;
+				INFOPLIST_FILE = NoGoofingOffBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.thywissen.john.NoGoofingOff.NoGoofingOffBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		1EA4B4CC21799A46009999B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NoGoofingOffTimerSafariExt/NoGoofingOffTimerSafariExt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 755KUH5ENK;
+				INFOPLIST_FILE = NoGoofingOffTimerSafariExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.thywissen.john.NoGoofingOff.NoGoofingOffTimerSafariExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		1EA4B4CD21799A46009999B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NoGoofingOffTimerSafariExt/NoGoofingOffTimerSafariExt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 755KUH5ENK;
+				INFOPLIST_FILE = NoGoofingOffTimerSafariExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.thywissen.john.NoGoofingOff.NoGoofingOffTimerSafariExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E65C82521793C0A00D07999 /* Build configuration list for PBXProject "NoGoofingOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E65C83621793C0B00D07999 /* Debug */,
+				1E65C83721793C0B00D07999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E65C83821793C0B00D07999 /* Build configuration list for PBXNativeTarget "NoGoofingOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E65C83921793C0B00D07999 /* Debug */,
+				1E65C83A21793C0B00D07999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E65C84D21793C3200D07999 /* Build configuration list for PBXNativeTarget "NoGoofingOffBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E65C84E21793C3200D07999 /* Debug */,
+				1E65C84F21793C3200D07999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EA4B4CE21799A46009999B4 /* Build configuration list for PBXNativeTarget "NoGoofingOffTimerSafariExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA4B4CC21799A46009999B4 /* Debug */,
+				1EA4B4CD21799A46009999B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E65C82221793C0A00D07999 /* Project object */;
+}

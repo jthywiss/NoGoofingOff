@@ -1,0 +1,11 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*github.com", "*scala-lang.org", "*oracle.com", "developer.apple.com", "192.168.100.1", "*objectivepi.com", "orc.csres.utexas.edu", "login.utexas.edu", "utdirect.utexas.edu"]
+        }
+    }
+]
