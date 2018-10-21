@@ -1,11 +1,11 @@
 [
   {
-    "action": {
-      "type": "block"
-    },
     "trigger": {
       "url-filter": ".*",
       "if-domain": ["*2o7.net", "*adblade.com", "*adbrite.com", "*adbureau.net", "*addthis.com", "*adgrabber.com", "*adnxs.com", "*adobedtm.com", "*adrants.com", "*adtechium.com", "*advertising.com", "*atdmt.com", "*atwola.com", "*bizographics.com", "*bttrack.com", "*chartbeat.com", "*chartbeat.net", "*collective-media.net", "*content.ad", "*crakmedia.com", "*criteo.net", "*crowdscience.com", "*cwkuki.com", "*disqus.com", "*doubleclick.net", "*doubleverify.com", "*e-connecting.net", "*exelator.com", "*facebook.com", "*facebook.net", "*fastclick.net", "*fb.com", "*fbcdn.net", "*foreseeresults.com", "*gemius.pl", "*gigya.com", "*google-analytics.com", "*googleanalytics.com", "*googlesyndication.com", "*googletagmanager.com", "*gravity.com", "*hitbox.com", "*intellitxt.com", "*interclick.com", "*invitemedia.com", "*mackeeper.com", "*omtrdc.net", "*optimost.com", "*outbrain.com", "*overture.com", "*pointroll.com", "*quantserve.com", "*revcontent.com", "*ru4.com", "*rubiconproject.com", "*scorecardresearch.com", "*scorecardsearch.com", "*securestudies.com", "*sojern.com", "*taboola.com", "*tribalfusion.com", "*usablestats.com", "*woopra.com", "*yieldmanager.com", "*zeobit.com"]
+    },
+    "action": {
+      "type": "block"
     }
   }
 ]

@@ -10,7 +10,7 @@
   },
   {
     "trigger": {
-      "if-top-url": ["file:///.*", "file://localhost/.*"]
+      "url-filter": "^file://.*"
     },
     "action": {
       "type": "ignore-previous-rules"
